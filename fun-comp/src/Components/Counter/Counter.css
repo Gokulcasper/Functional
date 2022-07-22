@@ -1,0 +1,27 @@
+.counter_container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+.button_container {
+  display: flex;
+  background-color: bisque;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  box-shadow: 1px 5px 10px #555;
+  border-radius: 10px;
+}
+.btn {
+  padding: 20px 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  background: green;
+  color: white;
+}
