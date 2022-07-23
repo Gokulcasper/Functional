@@ -19,7 +19,7 @@ const Counter = () => {
   console.log("count :", count);
 
   const handleChangeName = () => {
-    setCount({ ...count, name: "Gokul Raj" });
+    setCount({ ...count, name: "Raj" });
   };
 
   const handleResetName = () => {
@@ -48,7 +48,7 @@ const Counter = () => {
             Reset
           </button>
           <button className="btn1" onClick={handleChangeName}>
-            Change Gokul Raj
+            Change Raj
           </button>
           <button className="btn1" onClick={handleResetName}>
             Change Muthu
