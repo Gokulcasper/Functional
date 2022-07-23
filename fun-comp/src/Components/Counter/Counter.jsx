@@ -8,7 +8,7 @@ const Counter = () => {
 
   // }
   const hanldeIncrement = () => {
-    setCount({ ...count, value: Math.random(count.value) * 10 });
+    setCount({ ...count, value: count.value + 1 });
   };
 
   const handleDecrement = () => {
@@ -19,11 +19,11 @@ const Counter = () => {
   console.log("count :", count);
 
   const handleChangeName = () => {
-    setCount({ ...count, name: "G Raj" });
+    setCount({ ...count, name: "Gokul Raj" });
   };
 
   const handleResetName = () => {
-    setCount({ ...count, name: "muthu" });
+    setCount({ ...count, name: "Muthu" });
   };
 
   const handleResetValue = () => {
@@ -31,22 +31,35 @@ const Counter = () => {
   };
   return (
     <div className="counter_container">
-      <h3>My name is {count.name}</h3>
-
       <div className="button_container">
-        <button className="btn incBtn" onClick={hanldeIncrement}>
-          Inc
-        </button>
-        <h3 style={{ fontSize: "30px" }}>{count.value}</h3>
-        <button className="btn" onClick={handleDecrement}>
-          Dec
-        </button>
-        <button onClick={handleChangeName}>Change Raj</button>
-        <button onClick={handleResetName}>Change Muthu</button>
-        <button onClick={handleResetValue}> Reset</button>
+        <div className="button0_container">
+          <button className="btn incBtn" onClick={hanldeIncrement}>
+            Inc
+          </button>
+          <h3 style={{ fontSize: "30px" }}>{count.value}</h3>
+          <button className="btn" onClick={handleDecrement}>
+            Dec
+          </button>
+        </div>
+
+        <div className="button1_container">
+          <button className="btn-reset" onClick={handleResetValue}>
+            {" "}
+            Reset
+          </button>
+          <button className="btn1" onClick={handleChangeName}>
+            Change Gokul Raj
+          </button>
+          <button className="btn1" onClick={handleResetName}>
+            Change Muthu
+          </button>
+
+          <h3 className="h3">My name is {count.name}</h3>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Counter;
+
